@@ -8,10 +8,10 @@
   <script>
     function move(n,a,b,c)
     {
-        if (n == 1) console.log(a,"--->",c);  
+        if (n == 1) document.write(a+"to"+c+"<br>");  
         else{
             move(n-1,a,c,b)
-            console.log(a,"--->",c);
+            document.write(a+"to"+c+"<br>");
             move(n-1,b,a,c)
         }
     

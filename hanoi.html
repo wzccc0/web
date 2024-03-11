@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+  <script>
+    function move(n,a,b,c)
+    {
+        if (n == 1) console.log(a,"--->",c);  
+        else{
+            move(n-1,a,c,b)
+            console.log(a,"--->",c);
+            move(n-1,b,a,c)
+        }
+    
+    }
+    move(7,"A","B","C")
+</script>  
+</body>
+</html>

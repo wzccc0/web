@@ -17,13 +17,17 @@
            }
         </style>
     </head>
-<body>	
 Number of Disks to play<select id=numdisks></select>
 <input id=startbtn type=button onclick=startgame() class=button1 value=Start
 onmouseenter="showhint('Start the game','Start')" onmouseout=hidehint('Start')>
 <input id=pausebtn type=button onclick=startgame()class=button1 value=Pause>
 <input id=resumebtn type=button onclick=startgame()class=button1 value=Resume>
 Period Time<select id=period></select>
+<div style="position: relative;">
+    <div style="position: absolute; left: 105px; top: 0; width: 10px; height: 480px; background-color: red;"></div>
+    <div style="position: absolute; left: 690px; top: 0; width: 10px; height: 527px; background-color: blue;"></div>
+    <div style="position: absolute; left: 1320px; top: 0; width: 10px; height: 527px; background-color: green;"></div>
+  </div>
 <script>
 let s=document.getElementById('numdisks');
 for (let n=0;n<10;n++)
